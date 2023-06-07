@@ -1,0 +1,17 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@1,200&display=swap');
+*{padding:0;margin:0;box-sizing:border-box;}
+html{font-size:10px;font-family:'Montserrat',sans-serif;scroll-behavior:smooth;}
+a{text-decoration:none;}
+.container{min-height:100%;width:100%;display:flex;align-items:center;justify-content:center;}
+img{height:100%;width:100%;object-fit:cover;}
+p{color:black;font-size:1.4rem;margin-top:5px;line-height:2.5rem;font-weight:300;letter-spacing:.05rem;}
+.cta:hover{color:white;background-color:crimson;}
+.brand h1{font-size:3rem;text-transform:uppercase;color:black;}
+.brand h1 span{color:crimson;}
+#header{position:fixed;z-index:1000;left:0;top:0;width:100vw;height:auto;}
+#header .header{min-height:8vh;background-color:white;transition:.2s ease background-color;background-size:1200px;}
+.header .nav-bar{display:flex;align-items:center;justify-content:space-between;width:100%;height:100%;max-width:1300px;padding:0 10px;}
+#header .nav-list ul{list-style:none;position:absolute;background-color:black;width:100vw;height:100vh;left:100%;top:0;display:flex;flex-direction:column;justify-content:center;align-items:center;z-index:1;overflow-x:hidden;transition:left 0.3s ease;}
+#header .nav-list ul.active{left:0%;}
+#header .nav-list ul a{font-size:2.5rem;font-weight:500;letter-spacing:.2rem;text-decoration:none;color:grey;text-transform:uppercase;padding:20px;display:block;}
+#header .nav-list ul a::after{content:attr(data-after);position:absolute;top:50%;left:50%;transform:translate(-50%,-50%) scale(0);color:rgb(75,75,75);font-size:12rem;letter-spacing:50px;z-index:1;transition:letter-spacing}
